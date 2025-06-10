@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog - HTML Learning Journey</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            line-height: 1.6; 
+            background: #f4f4f4;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db); 
+            color: white; 
+            padding: 2rem 0; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav ul { list-style: none; display: flex; gap: 30px; margin-top: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: 500; }
+        nav a:hover { text-decoration: underline; }
+        
+        main { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; margin: 30px 0; }
+        
+        article { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        
+        aside { 
+            background: white; 
+            padding: 25px; 
+            border-radius: 10px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+        
+        footer { 
+            background: #2c3e50; 
+            color: white; 
+            text-align: center; 
+            padding: 30px 0; 
+        }
+        
+        .block-element { 
+            background: #e8f4fd; 
+            padding: 15px; 
+            margin: 20px 0; 
+            border-left: 4px solid #3498db;
+        }
+        
+        .inline-element { 
+            background: #fff3cd; 
+            padding: 2px 8px; 
+            border-radius: 4px;
+            display: inline;
+        }
+        
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            background: white;
+        }
+        th, td { 
+            padding: 12px; 
+            text-align: left; 
+            border: 1px solid #ddd; 
+        }
+        th { 
+            background: #3498db; 
+            color: white; 
+        }
+        tr:nth-child(even) { background: #f2f2f2; }
+        
+        .text-formatting { margin: 20px 0; }
+        .symbols { font-size: 1.2em; margin: 10px 0; }
+        
+        details { 
+            background: #f8f9fa; 
+            padding: 15px; 
+            margin: 20px 0; 
+            border-radius: 5px;
+        }
+        summary { 
+            cursor: pointer; 
+            font-weight: bold; 
+            color: #2c3e50;
+        }
+        
+        figure { 
+            margin: 20px 0; 
+            text-align: center;
+        }
+        figcaption { 
+            font-style: italic; 
+            color: #666; 
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            main { grid-template-columns: 1fr; }
+            nav ul { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Semantic Header -->
+    <header>
+        <div class="container">
+            <h1>🚀 The HTML Learning Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tutorials">Tutorials</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+            <!-- Main content section -->
+            <section>
+                <!-- Article 1: Block vs Inline -->
+                <article>
+                    <header>
+                        <h2>Understanding Block vs Inline Elements</h2>
+                        <p><small>Published on <time datetime="2024-06-10">June 10, 2024</time></small></p>
+                    </header>
+                    
+                    <div class="block-element">
+                        <h3>Block Elements</h3>
+                        <p>Block elements take up the <strong>full width</strong> available and start on a new line. Examples include:</p>
+                        <div>This div is a block element</div>
+                        <p>This paragraph is also a block element</p>
+                    </div>
+
+                    <p>Inline elements like <span class="inline-element">this span</span>, 
+                    <strong>this strong text</strong>, and <em>this emphasized text</em> 
+                    flow with the text and don't break to new lines.</p>
+
+                    <figure>
+                        <img src="https://via.placeholder.com/500x200/3498db/white?text=Block+vs+Inline+Demo" 
+                             alt="Block vs Inline elements demonstration" 
+                             width="500" height="200" style="border-radius: 8px;">
+                        <figcaption>Visual representation of block vs inline elements</figcaption>
+                    </figure>
+                </article>
+
+                <!-- Article 2: Text Formatting -->
+                <article>
+                    <header>
+                        <h2>Text Formatting Tags</h2>
+                    </header>
+                    
+                    <div class="text-formatting">
+                        <p>Here are various text formatting options:</p>
+                        <ul>
+                            <li><b>Bold text</b> using &lt;b&gt; tag</li>
+                            <li><strong>Important text</strong> using &lt;strong&gt; tag</li>
+                            <li><i>Italic text</i> using &lt;i&gt; tag</li>
+                            <li><em>Emphasized text</em> using &lt;em&gt; tag</li>
+                            <li><small>Small text</small> using &lt;small&gt; tag</li>
+                            <li><ins>Inserted text</ins> using &lt;ins&gt; tag</li>
+                            <li><del>Deleted text</del> using &lt;del&gt; tag</li>
+                            <li><mark>Highlighted text</mark> using &lt;mark&gt; tag</li>
+                            <li>H<sub>2</sub>O using &lt;sub&gt; for subscript</li>
+                            <li>E=mc<sup>2</sup> using &lt;sup&gt; for superscript</li>
+                        </ul>
+                    </div>
+
+                    <div class="symbols">
+                        <h3>Special Characters & Symbols</h3>
+                        <p>♠️ ♣️ ♥️ ♦️ © ® ™ ← → ↑ ↓ ∞ ≈ ≠ ≤ ≥ α β γ δ π Ω</p>
+                        <p>&lt; &gt; &amp; &quot; &apos; &nbsp; (non-breaking space)</p>
+                    </div>
+
+                    <details>
+                        <summary>Click to see more formatting examples</summary>
+                        <p>The &lt;details&gt; element creates expandable content sections. 
+                        This is perfect for FAQs, additional information, or progressive disclosure.</p>
+                        <p>You can put any HTML content inside here, including lists, images, or even tables!</p>
+                    </details>
+                </article>
+
+                <!-- Article 3: HTML Tables -->
+                <article>
+                    <header>
+                        <h2>Working with HTML Tables</h2>
+                    </header>
+                    
+                    <p>Tables are perfect for displaying structured data:</p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>HTML Tag</th>
+                                <th>Purpose</th>
+                                <th>Example</th>
+                                <th>Difficulty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&lt;div&gt;</td>
+                                <td>Generic container</td>
+                                <td>&lt;div&gt;Content&lt;/div&gt;</td>
+                                <td>⭐</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;article&gt;</td>
+                                <td>Standalone content</td>
+                                <td>&lt;article&gt;Blog post&lt;/article&gt;</td>
+                                <td>⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;section&gt;</td>
+                                <td>Thematic grouping</td>
+                                <td>&lt;section&gt;Chapter&lt;/section&gt;</td>
+                                <td>⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;aside&gt;</td>
+                                <td>Sidebar content</td>
+                                <td>&lt;aside&gt;Related links&lt;/aside&gt;</td>
+                                <td>⭐⭐⭐</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+
+            <!-- Sidebar -->
+            <aside>
+                <h3>🎯 Learning Progress</h3>
+                <ul>
+                    <li>✅ Basic HTML Structure</li>
+                    <li>✅ Text Elements</li>
+                    <li>✅ Lists & Links</li>
+                    <li>✅ Images & Media</li>
+                    <li>✅ Semantic HTML</li>
+                    <li>⏳ Forms (Next up!)</li>
+                    <li>⏳ Advanced Media</li>
+                </ul>
+
+                <h3>🔗 Quick Links</h3>
+                <nav>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin: 10px 0;"><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                        <li style="margin: 10px 0;"><a href="https://validator.w3.org" target="_blank">HTML Validator</a></li>
+                        <li style="margin: 10px 0;"><a href="#top">Back to Top</a></li>
+                    </ul>
+                </nav>
+
+                <h3>💡 Did You Know?</h3>
+                <p><small>Semantic HTML isn't just for humans - search engines and screen readers use these tags to better understand your content structure!</small></p>
+            </aside>
+        </main>
+    </div>
+
+    <!-- Semantic Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 HTML Learning Blog. Built with ❤️ and lots of ☕</p>
+            <p><small>Learning HTML one tag at a time! 🚀</small></p>
+        </div>
+    </footer>
+</body>
+</html>

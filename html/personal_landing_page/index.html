@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Journey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        h1 { color: #FFD700; text-align: center; }
+        h2 { color: #87CEEB; }
+        .highlight { background: rgba(255,255,0,0.3); padding: 2px 5px; border-radius: 3px; }
+        .navigation { background: rgba(0,0,0,0.2); padding: 15px; margin: 20px 0; border-radius: 8px; }
+        .navigation a { color: #FFD700; margin-right: 20px; text-decoration: none; }
+        .navigation a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- This is a comment in HTML - it won't show on the page -->
+        
+        <h1>Welcome to My Developer Journey</h1>
+        
+        <!-- Navigation using anchor tags -->
+        <nav class="navigation">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </nav>
+
+        <!-- Text elements demonstration -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm on a mission to become an <span class="highlight">amazing UI developer</span>! 
+            My learning curve looks like <code>e^x</code> - exponential growth every day.</p>
+            
+            <p>Here's what I'm learning:</p>
+            <br>
+            <p><strong>Current Focus:</strong> HTML fundamentals<br>
+            <strong>Next Up:</strong> CSS styling and JavaScript interactivity</p>
+        </section>
+
+        <!-- HTML Lists -->
+        <section id="skills">
+            <h2>Skills I'm Building</h2>
+            
+            <h3>Frontend Technologies (Ordered by Learning Priority)</h3>
+            <ol>
+                <li>HTML5 - Structure and Semantics</li>
+                <li>CSS3 - Styling and Layout</li>
+                <li>JavaScript - Interactivity and Logic</li>
+                <li>React - Component-based Development</li>
+            </ol>
+
+            <h3>Development Tools</h3>
+            <ul>
+                <li>VS Code</li>
+                <li>Git & GitHub</li>
+                <li>Browser Developer Tools</li>
+                <li>
+                    Package Managers
+                    <ul>
+                        <li>npm</li>
+                        <li>yarn</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Media elements -->
+        <section id="projects">
+            <h2>My Learning Journey</h2>
+            
+            <!-- Placeholder image with proper attributes -->
+            <img src="https://via.placeholder.com/400x200/667eea/white?text=My+First+HTML+Page" 
+                 alt="My first HTML project screenshot" 
+                 width="400" 
+                 height="200"
+                 style="border-radius: 8px; margin: 10px 0;">
+            
+            <p>This is my very first HTML page! I'm learning about:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <!-- Footer with more anchor examples -->
+        <footer style="margin-top: 40px; text-align: center; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 20px;">
+            <p>Connect with me: 
+                <a href="mailto:future.developer@email.com">Email</a> | 
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a> | 
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
